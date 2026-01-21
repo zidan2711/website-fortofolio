@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Software Engineer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animasi -->
+  <style>
+    .fade-in { animation: fadeIn 1.5s ease-in-out; }
+    .slide-up { animation: slideUp 1.5s ease-out; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ========== HEADER ========== -->
+<header class="bg-white shadow-md fixed w-full z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-bold text-blue-600">MyPortfolio</h1>
+    <nav class="space-x-6 hidden md:block font-medium">
+      <a href="#home" class="hover:text-blue-600">Home</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section id="home" class="min-h-screen flex items-center justify-center pt-28 bg-gradient-to-br from-blue-50 to-white">
+  <div class="grid md:grid-cols-2 gap-10 items-center max-w-6xl px-6 fade-in">
+
+    <!-- Text -->
+    <div>
+      <h2 class="text-4xl font-bold mb-4">
+        Halo, Saya <span class="text-blue-600">Software Engineer</span>
+      </h2>
+      <p class="text-gray-600 mb-6">
+        Siswa Rekayasa Perangkat Lunak yang menyukai Web Development,
+        UI Design, dan animasi website modern.
+      </p>
+      <a href="#portfolio"
+         class="px-6 py-3 rounded-lg text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-90 transition shadow">
+        Lihat Karya
+      </a>
+    </div>
+
+    <!-- Foto Diri -->
+    <div class="flex justify-center">
+      <img src="fotoganteng.jpeg"
+           class="w-64 h-64 object-cover rounded-full border-4 border-blue-500 shadow-xl"
+           alt="Foto Profil">
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="py-20 bg-white slide-up">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+    <!-- Foto About -->
+    <img src="fotoganteng.jpeg"
+         class="rounded-xl shadow-lg hover:scale-105 transition"
+         alt="Foto Tentang Saya">
+
+    <!-- Text -->
+    <div>
+      <h3 class="text-3xl font-bold mb-4 text-blue-600">Tentang Saya</h3>
+      <p class="text-gray-600 mb-4">
+        Saya adalah pelajar jurusan Software Engineering (RPL) yang
+        fokus pada pembuatan website, aplikasi sederhana, dan desain UI.
+      </p>
+      <ul class="space-y-2 text-gray-700 font-medium">
+        <li>✔ HTML, CSS, Tailwind</li>
+        <li>✔ Java</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PORTFOLIO ========== -->
+<section id="portfolio" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12 text-blue-600">
+      Karya Saya
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-xl hover:-translate-y-2 transition">
+        <img src="website makanan pagi.png" alt="Project 1">
+        <div class="p-5">
+          <h4 class="font-semibold text-xl">
+            Website Rekomendasi Makanan Pagi
+          </h4>
+          <p class="text-gray-500 text-sm">HTML • Tailwind</p>
+          <a href="https://rekomendasi-sarapan-pagi.vercel.app/"
+             class="text-blue-600 hover:underline text-sm mt-2 block">
+            Lihat Proyek
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-xl hover:-translate-y-2 transition">
+        <img src="web fortofolio.png" alt="Project 2">
+        <div class="p-5">
+          <h4 class="font-semibold text-xl">Website Portfolio</h4>
+          <p class="text-gray-500 text-sm">HTML • Tailwind</p>
+          <a href="index.html"
+             class="text-blue-600 hover:underline text-sm mt-2 block">
+            Lihat Proyek
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-xl hover:-translate-y-2 transition">
+        <img src="Proyek ukl.png" alt="Project 3">
+        <div class="p-5">
+          <h4 class="font-semibold text-xl">Proyek UKL</h4>
+          <p class="text-gray-500 text-sm">Java</p>
+          <a href="https://github.com/zidan2711/UKL_2025_SEMESTER_1.git"
+             class="text-blue-600 hover:underline text-sm mt-2 block">
+            Lihat Proyek
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer id="contact" class="bg-blue-600 py-10 text-white">
+  <div class="text-center">
+    <h4 class="text-xl font-bold mb-4">Hubungi Saya</h4>
+
+    <p>Email:
+      <a href="mailto:zidantri48@gmail.com" class="underline">
+        zidantri48@gmail.com
+      </a>
+    </p>
+
+    <p>WhatsApp:
+      <a href="https://wa.me/6285732504976" class="underline">
+        085732504976
+      </a>
+    </p>
+
+    <p>GitHub:
+      <a href="https://github.com/zidan2711" target="_blank" class="underline">
+        github.com/zidan2711
+      </a>
+    </p>
+
+    <p class="mt-6 text-blue-100 text-sm">
+      © 2026 Portofolio Software Engineer
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
